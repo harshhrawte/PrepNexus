@@ -1,0 +1,12 @@
+Flask==3.1.0
+torch==2.6.0
+transformers==4.51.3
+joblib==1.4.2
+PyPDF2==3.0.1
+requests==2.32.3
+beautifulsoup4==4.13.4
+python-dotenv==1.1.0
+chromadb==1.0.6
+langchain==0.3.24
+langchain-groq==0.3.2
+langchain-core==0.3.55
