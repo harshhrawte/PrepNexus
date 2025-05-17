@@ -17,8 +17,8 @@ Setup Instructions
 
 ### Large folders excluded from this repository:
 - `env/` (Python environment) — Please create your own environment using the provided requirements.
-- `roberta_resume/` (Model folder) — Download from [Google Drive link here].
-- `final_qg_model/` (Model folder) — Download from [Google Drive link here].
+- `roberta_resume/` (Model folder) — Download from [[Google Drive link here](https://drive.google.com/drive/folders/14iv4NwmxIZd5urdG3k7zQXNcoaAGqkgH?usp=sharing)].
+- `final_qg_model/` (Model folder) — Download from [[Google Drive link here](https://drive.google.com/drive/folders/14iv4NwmxIZd5urdG3k7zQXNcoaAGqkgH?usp=sharing)].
 
 These folders are excluded from the repo to keep it lightweight.
 
