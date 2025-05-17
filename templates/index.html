@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepNexus</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <h1 class="title">PrepNexus</h1>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero">
+        <div class="slider">
+            <img src="/static/9.jpg" alt="Slide 1" class="slider-image">
+            <img src="/static/ai2.jpeg" alt="Slide 2" class="slider-image">
+            <img src="/static/ai3.png" alt="Slide 3" class="slider-image">
+            <img src="/static/666.jpg" alt="Slide 4" class="slider-image">
+            <button class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <main class="main-content">
+        <section class="info-section">
+            <div class="info-container">
+                <h2>Overview</h2>
+                <p>Prepare for your next interview with AI-powered question generation.</p>
+            </div>
+            <div class="info-container">
+                <h2>How It Works</h2>
+                <p>Upload your resume, and our AI will generate personalized interview questions for you.</p>
+            </div>
+            <div class="info-container">
+                <h2>Get Started</h2>
+                <p>Sign up today and get interview-ready with smart, AI-driven insights.</p>
+            </div>
+        </section>
+
+        <!-- Resume Upload Section -->
+        <section class="upload-section">
+            <h1>Welcome to PrepNexus</h1>
+            <p>Your AI-powered interview preparation tool.</p>
+            <form id="uploadForm" action="/predict" method="POST" enctype="multipart/form-data">
+                <div class="drag-and-drop">
+                    <p>Drag and drop your resume here or click the upload button below.</p>
+                    <button class="upload-btn" type="button" onclick="document.getElementById('fileInput').click()">Upload from Device</button>
+                    <input type="file" id="fileInput" name="resume" accept=".pdf, .docx, .txt" style="display:none;">
+                    <div id="fileList"></div>
+                </div>
+                <button id="proceed-button" class="proceed-btn" type="submit">Proceed</button>
+            </form>
+            
+        </section>
+
+        <!-- AI-Generated Interview Questions -->
+        <section id="generated-questions" style="display: none;">
+            <h2>AI-Generated Interview Questions</h2>
+            <ul id="questions-list"></ul>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* Body Styling with Background Image */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/static/90.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #333;
+}
+
+/* Headings */
+.container h1, .container h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-container {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="text"],
+textarea,
+.text-box,
+.long-text-box {
+    width: 80%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.long-text-box {
+    height: 200px;
+    resize: vertical;
+}
+
+/* Submit Button */
+input[type="submit"],
+.chat-input button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+.chat-input button:hover {
+    background-color: #2980b9;
+}
+
+/* Results Container */
+.result-container,
+.predicted-role-container,
+.questions-container {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    color: #2c3e50;
+}
+
+.predicted-role-container p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Chatbot Styling */
+.chatbot-container {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #ffffffd9;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.chat-window {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 15px;
+    height: 300px;
+    overflow-y: scroll;
+    text-align: left;
+    border: 2px solid #3498db;
+}
+
+.chat-window p {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #d1ecf1;
+    text-align: right;
+    margin-left: auto;
+}
+
+.bot-message {
+    background-color: #e2e3e5;
+    text-align: left;
+    margin-right: auto;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    textarea,
+    .text-box,
+    .long-text-box {
+        width: 100%;
+    }
+}
+
+

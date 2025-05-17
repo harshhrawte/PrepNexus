@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <link rel="stylesheet" href="/static/res.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="/faq">Chatbot</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Resume Intelligence Engine</h1>
+
+        <!-- Predicted Role Section -->
+        <div class="result-container">
+            <h2>AI-Picked Career Match</h2>
+            <div class="predicted-role-container">
+                <p>You can apply for this role as your resume has specialty in this domain:</p>
+                <input type="text" id="predictedRole" class="text-box" readonly value="{{ predicted_role }}">
+            </div>
+        </div>
+
+        <!-- Chatbot Section -->
+        <div class="chatbot-container">
+            <h2>PrepNexus AI</h2>
+            <div class="chat-window" id="chatWindow">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/static/chatbot.js"></script>
+</body>
+</html>

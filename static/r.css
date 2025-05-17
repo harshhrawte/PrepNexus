@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/l.jpg'); /* Ensure the file is in /static */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9); /* Darker background */
+    padding: 15px 20px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.bold-link {
+    font-weight: bold;
+}
+
+/* Ensure page content doesn't overlap navbar */
+body {
+    padding-top: 60px; /* Adjust to match navbar height */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Centering Navbar Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+/* Resume Ranking Box */
+/* Resume Ranking Box */
+.resume-ranking-box {
+    background: rgba(255, 255, 255, 0.15); /* Transparent Box */
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%; /* Same as resumes-container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+
+/* Resumes Container */
+.resumes-container {
+    background: rgba(255, 255, 255, 0.15); /* Transparent Box */
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Individual Resume Box */
+.resume-box {
+    background: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    text-align: left;
+    border: 3px solid #ffcc00; /* Thin yellow border */
+}
+
+.resume-box:hover {
+    transform: scale(1.05);
+}
+
+.resume-box p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333; /* Darker text inside box */
+}
+
+/* Rank Label */
+.rank-label {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background:#363839; /* Dark color for contrast */
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+strong {
+    color: #333; /* Highlighting strong text */
+}
