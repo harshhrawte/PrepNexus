@@ -26,6 +26,10 @@ Setup Instructions
 - `roberta_resume/` (Model folder) — Download from [[Google Drive link here](https://drive.google.com/drive/folders/14iv4NwmxIZd5urdG3k7zQXNcoaAGqkgH?usp=sharing)].
 - `final_qg_model/` (Model folder) — Download from [[Google Drive link here](https://drive.google.com/drive/folders/14iv4NwmxIZd5urdG3k7zQXNcoaAGqkgH?usp=sharing)].
 
+Colab NoteBook- https://colab.research.google.com/drive/1dBJYWoto6PAJHSz-CLj8o_gpTAVJ4spW?usp=sharing 
+of RoBERTa for
+resume role predictor.
+
 These folders are excluded from the repo to keep it lightweight.
 
 ---
