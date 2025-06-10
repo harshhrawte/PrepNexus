@@ -1,6 +1,8 @@
-# PrepNexus
+# PrepNexus 
 
 PrepNexus is an AI-powered Resume Analysis and Interview Preparation system designed to enhance job search and interview success.
+
+I published an Article on my following project - https://app.readytensor.ai/publications/cracking-the-interview-with-ai-how-prepnexus-predicts-roles-finds-jobs-and-prepares-you-with-qna-P8iyLvTGNvBw 
 
 Features
 AI-driven Resume Analysis: Utilizes a fine-tuned RoBERTa model to recommend the best job roles tailored to candidate profiles.
@@ -8,6 +10,8 @@ AI-driven Resume Analysis: Utilizes a fine-tuned RoBERTa model to recommend the 
 Intelligent Interview Chatbot: Built with LangChain and ChromaDB, powered by LLaMA-3 (8B) to provide real-time, context-aware technical interview Q&A.
 
 Automated Job Scraper: Uses BeautifulSoup to fetch up-to-date job listings from Indeed, improving job search efficiency by 40%.
+
+
 
 Setup Instructions 
 
